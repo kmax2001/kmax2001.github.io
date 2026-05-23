@@ -19,9 +19,9 @@ publication: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CV
 publication_short: "CVPR 2026"
 featured: true
 links:
-  - type: preprint
-    provider: arxiv
-    id: "2604.03685"
+  - type: custom
+    label: Preprint
+    url: "https://arxiv.org/abs/2604.03685"
   - type: pdf
     url: "https://arxiv.org/pdf/2604.03685"
   - type: project

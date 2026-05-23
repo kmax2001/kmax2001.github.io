@@ -19,9 +19,9 @@ publication: "arXiv preprint, 2025"
 publication_short: "arXiv 2025"
 featured: true
 links:
-  - type: preprint
-    provider: arxiv
-    id: "2510.05662"
+  - type: custom
+    label: Preprint
+    url: "https://arxiv.org/abs/2510.05662"
   - type: pdf
     url: "https://arxiv.org/pdf/2510.05662"
   - type: project
