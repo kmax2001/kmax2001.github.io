@@ -18,9 +18,6 @@ publication_types: ["paper-conference"]
 publication: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026"
 publication_short: "CVPR 2026"
 featured: true
-hugoblox:
-  ids:
-    arxiv: "2604.03685"
 links:
   - type: preprint
     provider: arxiv

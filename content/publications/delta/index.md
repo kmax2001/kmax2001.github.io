@@ -18,9 +18,6 @@ publication_types: ["paper-conference"]
 publication: "arXiv preprint, 2025"
 publication_short: "arXiv 2025"
 featured: true
-hugoblox:
-  ids:
-    arxiv: "2510.05662"
 links:
   - type: preprint
     provider: arxiv
