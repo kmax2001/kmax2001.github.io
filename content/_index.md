@@ -1,106 +1,184 @@
 ---
-# Leave the homepage title empty to use the site title
 title: ''
 summary: ''
-date: 2022-10-24
+date: 2026-05-23
 type: landing
 
 sections:
-  - block: resume-biography-3
-    content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
-      username: me
-      text: ''
-      # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
-      headings:
-        about: ''
-        education: ''
-        interests: ''
-    design:
-      # Use the new Gradient Mesh which automatically adapts to the selected theme colors
-      background:
-        gradient_mesh:
-          enable: true
-
-      # Name heading sizing to accommodate long or short names
-      name:
-        size: md # Options: xs, sm, md, lg (default), xl
-
-      # Avatar customization
-      avatar:
-        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-        shape: circle # Options: circle (default), square, rounded
   - block: markdown
+    id: intro
     content:
-      title: '📚 My Research'
-      subtitle: ''
+      title: ''
       text: |-
-        I am an M.S. student in Mechanical Engineering at KAIST, advised by Prof. Kuk-Jin Yoon. My research focuses on event-based perception, human pose estimation, and robot intelligence. I am particularly interested in developing robust perception and action models that enable robots to operate reliably in dynamic real-world environments.
+        <section class="yh-intro">
+          <div class="yh-profile">
+            <img src="/media/avatar.jpg" alt="Youngho Kim" class="yh-avatar">
 
-        My recent work explores event cameras for robust visual perception, human pose estimation under challenging motion conditions, and vision-language-action models for robotic manipulation.
+            <h1>Youngho Kim</h1>
+            <p class="yh-role">M.S. Student in Mechanical Engineering<br>KAIST</p>
+
+            <div class="yh-social">
+              <a href="mailto:YOUR_EMAIL">Email</a>
+              <a href="https://github.com/kmax2001">GitHub</a>
+              <a href="YOUR_GOOGLE_SCHOLAR_URL">Scholar</a>
+              <a href="/uploads/resume.pdf">CV</a>
+            </div>
+          </div>
+
+          <div class="yh-intro-main">
+            <h2>This is my introduction</h2>
+            <p>
+              I am an M.S. student in Mechanical Engineering at KAIST, advised by Prof. Kuk-Jin Yoon.
+              My research focuses on event-based perception, human pose estimation, and robot intelligence.
+              I am broadly interested in robust perception and vision-language-action models for real-world robotic systems.
+            </p>
+
+            <div class="yh-timeline">
+              <div class="yh-time-item">
+                <span class="yh-date">2016.3</span>
+                <div class="yh-line"></div>
+                <h3>High School</h3>
+                <p>High school education</p>
+              </div>
+
+              <div class="yh-time-item">
+                <span class="yh-date">2019.2</span>
+                <div class="yh-line"></div>
+                <h3>B.S. in KAIST</h3>
+                <p>B.S. in Mechanical Engineering</p>
+              </div>
+
+              <div class="yh-time-item">
+                <span class="yh-date">2025.8</span>
+                <div class="yh-line"></div>
+                <h3>M.S. in KAIST</h3>
+                <p>M.S. in Mechanical Engineering</p>
+              </div>
+
+              <div class="yh-time-item">
+                <span class="yh-date">Present</span>
+                <div class="yh-line"></div>
+                <h3>Research</h3>
+                <p>Event-based vision and robot intelligence</p>
+              </div>
+            </div>
+          </div>
+        </section>
     design:
       columns: '1'
-  # - block: collection
-  #   id: papers
-  #   content:
-  #     title: Featured Publications
-  #     filters:
-  #       folders:
-  #         - publications
-  #       featured_only: true
-  #   design:
-  #     view: article-grid
-  #     columns: 2
-  # - block: collection
-  #   content:
-  #     title: Recent Publications
-  #     text: ''
-  #     filters:
-  #       folders:
-  #         - publications
-  #       exclude_featured: false
-  #   design:
-  #     view: citation
-  # - block: collection
-  #   id: talks
-  #   content:
-  #     title: Recent & Upcoming Talks
-  #     filters:
-  #       folders:
-  #         - events
-  #   design:
-  #     view: card
-  # - block: collection
-  #   id: news
-  #   content:
-  #     title: Recent News
-  #     subtitle: ''
-  #     text: ''
-  #     # Page type to display. E.g. post, talk, publication...
-  #     page_type: blog
-  #     # Choose how many pages you would like to display (0 = all pages)
-  #     count: 10
-  #     # Filter on criteria
-  #     filters:
-  #       author: ''
-  #       category: ''
-  #       tag: ''
-  #       exclude_featured: false
-  #       exclude_future: false
-  #       exclude_past: false
-  #       publication_type: ''
-  #     # Choose how many pages you would like to offset by
-  #     offset: 0
-  #     # Page order: descending (desc) or ascending (asc) date.
-  #     order: desc
-  #   design:
-  #     # Choose a layout view
-  #     view: card
-  #     # Reduce spacing
-  #     spacing:
-  #       padding: [0, 0, 0, 0]
 
+  - block: markdown
+    id: research-interests
+    content:
+      title: 'Research Interests'
+      text: |-
+        <section class="yh-card-grid yh-three">
+          <div class="yh-card">
+            <img src="/media/research-event.jpg" alt="Event-based Vision">
+            <h3>Event-based Vision</h3>
+            <p>
+              Robust visual perception using event cameras for high-speed and challenging motion scenarios.
+            </p>
+          </div>
+
+          <div class="yh-card">
+            <img src="/media/research-pose.jpg" alt="Human Pose Estimation">
+            <h3>Human Pose Estimation</h3>
+            <p>
+              Human pose estimation under motion blur, dynamic scenes, and cross-modal sensing conditions.
+            </p>
+          </div>
+
+          <div class="yh-card">
+            <img src="/media/research-robot.jpg" alt="Robot Intelligence">
+            <h3>Robot Intelligence</h3>
+            <p>
+              Robot perception, manipulation, and vision-language-action models for real-world robotic systems.
+            </p>
+          </div>
+        </section>
+    design:
+      columns: '1'
+
+  - block: markdown
+    id: publications
+    content:
+      title: 'Publications'
+      text: |-
+        <section class="yh-card-grid yh-three">
+          <div class="yh-pub-card">
+            <img src="/media/pub-event6d.jpg" alt="Publication thumbnail">
+            <h3>Event6D</h3>
+            <p><strong>Youngho Kim</strong>, et al.</p>
+            <p>CVPR 2026</p>
+            <div class="yh-buttons">
+              <a href="#">Paper</a>
+              <a href="#">Code</a>
+              <a href="#">Project</a>
+            </div>
+          </div>
+
+          <div class="yh-pub-card">
+            <img src="/media/pub-dsertroll.jpg" alt="Publication thumbnail">
+            <h3>Dsert Roll</h3>
+            <p><strong>Youngho Kim</strong>, et al.</p>
+            <p>CVPR 2026</p>
+            <div class="yh-buttons">
+              <a href="#">Paper</a>
+              <a href="#">Code</a>
+              <a href="#">Project</a>
+            </div>
+          </div>
+
+          <div class="yh-pub-card">
+            <img src="/media/pub-sharp2blur.jpg" alt="Publication thumbnail">
+            <h3>From Sharp to Blur</h3>
+            <p><strong>Youngho Kim</strong>, et al.</p>
+            <p>ICCV 2025</p>
+            <div class="yh-buttons">
+              <a href="#">Paper</a>
+              <a href="#">Code</a>
+              <a href="#">Project</a>
+            </div>
+          </div>
+        </section>
+
+        <p class="yh-view-more">
+          <a href="/publications/">view more</a>
+        </p>
+    design:
+      columns: '1'
+
+  - block: markdown
+    id: awards
+    content:
+      title: 'Awards & Honors'
+      text: |-
+        <section class="yh-awards">
+          <div class="yh-award-item">
+            <span>2025</span>
+            <div>
+              <h3>Summa Cum Laude</h3>
+              <p>Korea Advanced Institute of Science and Technology</p>
+            </div>
+          </div>
+
+          <div class="yh-award-item">
+            <span>2025</span>
+            <div>
+              <h3>Outstanding Undergraduate Research</h3>
+              <p>Description here</p>
+            </div>
+          </div>
+
+          <div class="yh-award-item">
+            <span>2024</span>
+            <div>
+              <h3>Award Title</h3>
+              <p>Description here</p>
+            </div>
+          </div>
+        </section>
+    design:
+      columns: '1'
 ---
