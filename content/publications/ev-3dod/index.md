@@ -11,8 +11,8 @@ author_notes:
 date: "2025-01-01T00:00:00Z"
 publishDate: "2025-01-01T00:00:00Z"
 publication_types: ["paper-conference"]
-publication: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025. Highlight, top 3.0%"
-publication_short: "CVPR 2025"
+publication: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025. Highlight, top 3.0%."
+publication_short: "CVPR 2025 Highlight, top 3.0%"
 featured: true
 links:
   - type: custom
@@ -31,3 +31,5 @@ slides: ""
 ---
 
 *Equal contribution.
+
+Highlight, top 3.0%.
