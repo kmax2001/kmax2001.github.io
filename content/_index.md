@@ -20,7 +20,7 @@ sections:
             <div class="yh-social">
               <a href="mailto:YOUR_EMAIL">Email</a>
               <a href="https://github.com/kmax2001">GitHub</a>
-              <a href="YOUR_GOOGLE_SCHOLAR_URL">Scholar</a>
+              <a href="#">Scholar</a>
               <a href="/uploads/resume.pdf">CV</a>
             </div>
           </div>
@@ -76,25 +76,19 @@ sections:
           <div class="yh-card">
             <img src="/media/research-event.jpg" alt="Event-based Vision">
             <h3>Event-based Vision</h3>
-            <p>
-              Robust visual perception using event cameras for high-speed and challenging motion scenarios.
-            </p>
+            <p>Robust visual perception using event cameras for high-speed and challenging motion scenarios.</p>
           </div>
 
           <div class="yh-card">
             <img src="/media/research-pose.jpg" alt="Human Pose Estimation">
             <h3>Human Pose Estimation</h3>
-            <p>
-              Human pose estimation under motion blur, dynamic scenes, and cross-modal sensing conditions.
-            </p>
+            <p>Human pose estimation under motion blur, dynamic scenes, and cross-modal sensing conditions.</p>
           </div>
 
           <div class="yh-card">
             <img src="/media/research-robot.jpg" alt="Robot Intelligence">
             <h3>Robot Intelligence</h3>
-            <p>
-              Robot perception, manipulation, and vision-language-action models for real-world robotic systems.
-            </p>
+            <p>Robot perception, manipulation, and vision-language-action models for real-world robotic systems.</p>
           </div>
         </section>
     design:
