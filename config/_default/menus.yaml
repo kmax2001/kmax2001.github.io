@@ -4,7 +4,7 @@ main:
     weight: 10
 
   - name: Research
-    url: /#research-interests
+    url: /#research
     weight: 20
 
   - name: Publications

@@ -26,7 +26,6 @@ sections:
                 <a href="/uploads/resume.pdf">CV</a>
               </div>
             </aside>
-
             <main class="yh-intro-main">
               <section class="yh-about">
                 <h2>This is my introduction</h2>
@@ -36,7 +35,6 @@ sections:
                   I am broadly interested in robust perception and vision-language-action models for real-world robotic systems.
                 </p>
               </section>
-
               <section class="yh-education" aria-label="Education timeline">
                 <div class="yh-timeline">
                   <article class="yh-time-item">
@@ -44,19 +42,16 @@ sections:
                     <h3>High School</h3>
                     <p>High school education</p>
                   </article>
-
                   <article class="yh-time-item">
                     <span class="yh-date">2019.2</span>
                     <h3>B.S. in KAIST</h3>
                     <p>B.S. in Mechanical Engineering</p>
                   </article>
-
                   <article class="yh-time-item">
                     <span class="yh-date">2025.8</span>
                     <h3>M.S. in KAIST</h3>
                     <p>M.S. in Mechanical Engineering</p>
                   </article>
-
                   <article class="yh-time-item">
                     <span class="yh-date">Present</span>
                     <h3>Research</h3>
@@ -66,7 +61,6 @@ sections:
               </section>
             </main>
           </section>
-
           <section class="yh-section" id="research">
             <h2>Research Interests</h2>
             <div class="yh-card-grid">
@@ -75,13 +69,11 @@ sections:
                 <h3>Event-based Vision</h3>
                 <p>Robust perception with event cameras for high-speed motion and challenging lighting.</p>
               </article>
-
               <article class="yh-card">
                 <div class="yh-card-media"></div>
                 <h3>Human Pose Estimation</h3>
                 <p>Cross-modal human pose estimation for dynamic scenes and motion-degraded observations.</p>
               </article>
-
               <article class="yh-card">
                 <div class="yh-card-media"></div>
                 <h3>Robot Intelligence</h3>
@@ -89,7 +81,6 @@ sections:
               </article>
             </div>
           </section>
-
           <section class="yh-section" id="publications">
             <div class="yh-section-head">
               <h2>Publications</h2>
@@ -102,14 +93,12 @@ sections:
                 <p>Youngho Kim, et al.</p>
                 <p>CVPR 2026</p>
               </article>
-
               <article class="yh-card yh-publication">
                 <div class="yh-card-media"></div>
                 <h3>Dsert Roll</h3>
                 <p>Youngho Kim, et al.</p>
                 <p>CVPR 2026</p>
               </article>
-
               <article class="yh-card yh-publication">
                 <div class="yh-card-media"></div>
                 <h3>From Sharp to Blur</h3>
@@ -118,7 +107,6 @@ sections:
               </article>
             </div>
           </section>
-
           <section class="yh-section yh-awards" id="awards">
             <h2>Awards &amp; Honors</h2>
             <div class="yh-award-list">
@@ -129,7 +117,6 @@ sections:
                   <p>Korea Advanced Institute of Science and Technology</p>
                 </div>
               </article>
-
               <article>
                 <time>2025</time>
                 <div>
@@ -137,7 +124,6 @@ sections:
                   <p>Description here</p>
                 </div>
               </article>
-
               <article>
                 <time>2024</time>
                 <div>
