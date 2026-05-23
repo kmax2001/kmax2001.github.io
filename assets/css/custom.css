@@ -87,18 +87,14 @@
 }
 
 .yh-timeline {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  margin-top: 1.5rem;
-}
-
-.yh-time-item {
   position: relative;
-  min-height: 9.5rem;
-  padding: 2.65rem 1.5rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 1.5rem;
+  padding-right: 4.5rem;
 }
 
-.yh-time-item::before {
+.yh-timeline::before {
   content: '';
   position: absolute;
   top: 1.15rem;
@@ -107,6 +103,12 @@
   height: 2px;
   background: currentColor;
   opacity: 0.45;
+}
+
+.yh-time-item {
+  position: relative;
+  min-height: 9.5rem;
+  padding: 2.35rem 1.5rem 0 0;
 }
 
 .yh-time-item::after {
@@ -129,7 +131,7 @@
 
 .yh-time-item h3 {
   margin: 0 0 0.45rem;
-  padding-top: 1.2rem;
+  padding-top: 0.65rem;
   padding-left: 0.75rem;
   border-left: 3px solid currentColor;
   font-size: 1.15rem;
@@ -142,6 +144,25 @@
   font-size: 0.94rem;
   line-height: 1.5;
   color: rgb(20 20 20 / 70%);
+}
+
+.yh-timeline-present {
+  position: absolute;
+  top: 1.55rem;
+  right: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.yh-timeline-present::before {
+  content: '';
+  position: absolute;
+  top: -0.69rem;
+  right: 0;
+  width: 0.62rem;
+  height: 0.62rem;
+  border-radius: 50%;
+  background: currentColor;
 }
 
 .yh-section {
@@ -247,6 +268,15 @@
   .yh-timeline,
   .yh-card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .yh-timeline {
+    padding-right: 0;
+  }
+
+  .yh-timeline::before,
+  .yh-timeline-present {
+    display: none;
   }
 
   .yh-time-item {
