@@ -1,0 +1,14 @@
+- title: High-Speed Perception
+  description: Low-latency multimodal perception for tracking fast motion and understanding dynamic environments.
+  image: ""
+  image_alt: ""
+
+- title: Reactive Robot Policy
+  description: Robot policies that connect perception to action and respond rapidly to changes in the environment.
+  image: ""
+  image_alt: ""
+
+- title: Robust Representation Learning
+  description: Learning visual representations that remain reliable across changing conditions, modalities, and domains.
+  image: ""
+  image_alt: ""

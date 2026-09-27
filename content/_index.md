@@ -2,7 +2,7 @@
 title: ''
 summary: ''
 date: 2026-05-23
-type: landing
+type: personal-home
 
 sections:
   - block: home-layout

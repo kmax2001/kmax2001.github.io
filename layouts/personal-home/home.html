@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Youngho Kim</title>
+  <meta name="description" content="Youngho Kim is an M.S. student at KAIST researching event-based vision, human pose estimation, and robot intelligence.">
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ $style := resources.Get "css/home.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+</head>
+<body>
+  <a class="skip-link" href="#research">Skip to research</a>
+  <main class="page">
+    <header class="profile">
+      <div class="introduction">
+        <h1>Youngho Kim</h1>
+        <p>Hi! I am an M.S. student in Mechanical Engineering at <a href="https://www.kaist.ac.kr/">KAIST</a>, advised by Prof. Kuk-Jin Yoon.</p>
+        <p>I received my B.S. in Mechanical Engineering with a minor in Computer Science from KAIST, graduating <em>summa cum laude</em>.</p>
+        <nav class="profile-links" aria-label="Contact and profiles">
+          {{ $links := hugo.Data.authors.me.links }}
+          {{ range slice "Email" "CV" "Scholar" "Twitter" "GitHub" }}
+            {{ $label := . }}
+            {{ range where $links "label" $label }}
+              <a href="{{ .url | relURL }}"{{ if eq $label "Email" }} aria-label="Email Youngho Kim at kmax2001@kaist.ac.kr"{{ end }}>{{ $label }}</a>
+            {{ end }}
+          {{ end }}
+        </nav>
+      </div>
+      <img class="portrait" src="{{ "media/authors/me.jpg" | relURL }}" alt="Youngho Kim" width="240" height="280" fetchpriority="high">
+    </header>
+
+    <section id="research" aria-labelledby="research-title">
+      <h2 id="research-title">Research Interests</h2>
+      <p>I aim to develop <strong>embodied intelligence systems</strong> that connect perception to action <strong>as efficiently as humans do.</strong> My research focuses on complementary multimodal perception, robust visual representation learning, and connecting perceptual representations to robot decision-making. My recent research has focused on:</p>
+      <div class="research-grid">
+        {{ range hugo.Data.research }}
+          <article class="research-card">
+            {{ if .image }}
+              <div class="research-media">
+                <img src="{{ .image | relURL }}" alt="{{ .image_alt | default .title }}" loading="lazy" decoding="async">
+              </div>
+            {{ else }}
+              <div class="research-media research-media-empty" aria-hidden="true"></div>
+            {{ end }}
+            <h3>{{ .title }}</h3>
+            <p>{{ .description }}</p>
+          </article>
+        {{ end }}
+      </div>
+      <div class="publication-heading" id="publications">
+        <h3>Publications</h3>
+        <p class="contribution">* Equal contribution</p>
+      </div>
+      <div class="publications">
+        {{ range (where site.RegularPages "Section" "publications").ByDate.Reverse }}
+          {{ $paper := . }}
+          {{ $primary := .RelPermalink }}
+          {{ range .Params.links }}
+            {{ if eq .type "pdf" }}{{ $primary = .url }}{{ end }}
+          {{ end }}
+          <article class="publication">
+            {{ $thumbnail := false }}
+            {{ range slice "featured.gif" "featured.webp" "featured.png" "featured.jpg" "featured.jpeg" }}
+              {{ if not $thumbnail }}
+                {{ with $paper.Resources.GetMatch . }}{{ $thumbnail = . }}{{ end }}
+              {{ end }}
+            {{ end }}
+            {{ with $thumbnail }}
+              <a class="publication-media" href="{{ $primary }}" aria-label="View {{ $paper.Title }}">
+                <img src="{{ .RelPermalink }}" alt="{{ $paper.Params.image.alt | default (printf "Overview of %s" $paper.Title) }}" loading="lazy" decoding="async">
+              </a>
+            {{ else }}
+              <div class="publication-media publication-media-empty" aria-hidden="true"></div>
+            {{ end }}
+            <div class="publication-details">
+            <h4><a href="{{ $primary }}">{{ .Title }}</a></h4>
+            <p class="authors">{{ range $i, $author := .Params.authors }}{{ if $i }}, {{ end }}{{ if eq $author "Youngho Kim" }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}{{ with $paper.Params.author_notes }}{{ if lt $i (len .) }}{{ if eq (index . $i) "Equal contribution" }}<sup>*</sup>{{ end }}{{ end }}{{ end }}{{ end }}</p>
+            <p class="venue">{{ .Params.publication_short }}</p>
+            {{ with .Params.links }}
+              <nav class="paper-links" aria-label="Resources for {{ $paper.Title }}">
+                {{ range . }}
+                  {{ $label := .label }}
+                  {{ if eq .type "pdf" }}{{ $label = "Paper" }}{{ end }}
+                  {{ if eq .type "project" }}{{ $label = "Website" }}{{ end }}
+                  {{ if eq .type "code" }}{{ $label = "Code" }}{{ end }}
+                  {{ if eq .type "dataset" }}{{ $label = "Dataset" }}{{ end }}
+                  <a href="{{ .url }}">{{ $label }}</a>
+                {{ end }}
+              </nav>
+            {{ end }}
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    </section>
+
+    <section class="awards" id="awards" aria-labelledby="awards-title">
+      <h2 id="awards-title">Awards &amp; Honors</h2>
+      <dl>
+        <div><dt>2024</dt><dd>KAIST ME, Dean's List Award <span>Top 3% of ME students</span></dd></div>
+        <div><dt>2023</dt><dd>KAIST ME, Academic Excellence Scholarship <span>Top 4 students in ME</span></dd></div>
+        <div><dt>2023</dt><dd>KAIST ME, Dean's List Award <span>Top 3% of ME students</span></dd></div>
+        <div><dt>2019</dt><dd>KAIST, Freshman Dean's List Award <span>Top 3% of freshman students</span></dd></div>
+      </dl>
+    </section>
+    <footer>Layout inspired by <a href="https://rureadyo.github.io/">Sungjae Park</a> and <a href="https://jonbarron.info/">Jon Barron</a>.</footer>
+  </main>
+</body>
+</html>

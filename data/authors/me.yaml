@@ -20,12 +20,17 @@ affiliations:
 
 links:
   - icon: at-symbol
-    url: mailto:YOUR_EMAIL
-    label: E-mail Me
+    url: mailto:kmax2001@kaist.ac.kr
+    label: Email
+  - icon: academicons/cv
+    url: /uploads/CV.pdf
+    label: CV
   - icon: brands/github
     url: https://github.com/kmax2001
+    label: GitHub
   - icon: academicons/google-scholar
-    url: YOUR_GOOGLE_SCHOLAR_URL
+    url: https://scholar.google.com/citations?user=ZDpIMQ0AAAAJ&hl=ko
+    label: Scholar
 
 interests:
   - Event-based Vision

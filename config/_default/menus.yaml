@@ -16,5 +16,5 @@ main:
     weight: 40
 
   - name: CV
-    url: /uploads/resume.pdf
+    url: /uploads/CV.pdf
     weight: 50
